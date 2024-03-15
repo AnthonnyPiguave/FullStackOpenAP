@@ -14,7 +14,7 @@ sequenceDiagram
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
     activate server
-    server-->>browser: the css file
+    server-->>browser: the CSS file
     deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
@@ -38,8 +38,8 @@ sequenceDiagram
     activate browser
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note with the note text
     activate server
-    Note right of server: Processes the info and save the note.   
-    server-->>browser: Returns the status of the task
+    Note right of server: Processes the info and saves the note.   
+    server-->>browser: Returns the status of the task and redirects to /notes
     deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
@@ -49,7 +49,7 @@ sequenceDiagram
     
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
     activate server
-    server-->>browser: the css file
+    server-->>browser: the CSS file
     deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
